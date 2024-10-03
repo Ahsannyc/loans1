@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.header {
+  background-color: rgb(80, 185, 10);
+  color: white;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
